@@ -20,7 +20,12 @@ nav a {
     padding: 20px;
 }
 
+body {
+    font-family: Georgia;
+}
+
 h1 {
+    font-family: 'Arial Black';
     color: darkblue;
     margin: var(--margin) 0;
 }
