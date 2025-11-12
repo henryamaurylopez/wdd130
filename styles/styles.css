@@ -40,9 +40,13 @@ main img {
     float: right;
 }
 
-p {padding: 0;}
+p {
+    padding: 0;
+}
 
-main {max-width: 1000px;}
+main {
+    max-width: 1000px;
+}
 
 aside {
     width: 40rem;
@@ -62,7 +66,7 @@ aside img {
 footer {
     margin-top: var(--margin);
     border-top: 1px solid #000;
-    text-align: center; 
+    text-align: center;
 }
 
 /* Class Selectors */
@@ -72,5 +76,5 @@ footer {
     border: 1px solid black;
     padding: var(--padding);
     background-color: #f7f7f7;
-    color: #1f1a1a 
+    color: #1f1a1a;
 }
