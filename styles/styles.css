@@ -30,7 +30,7 @@ p {
 }
 
 main {
-    width: 78rem;
+    max-width: 78rem;
 }
 
 aside {
@@ -50,6 +50,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid darkblue;
+    padding: 0;
+    box-shadow: 0 0 5px darkblue;
 }
 
 footer {
