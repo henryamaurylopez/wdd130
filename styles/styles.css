@@ -35,7 +35,7 @@ main {
 
 aside {
     width: 78rem;
-    margin: 1rem;
+    margin: 1.5rem 1rem 1rem 1rem;
     border: 2px dotted darkblue;
     padding: 1rem 1rem 1rem 2.3rem;
     background-color: lightblue;
