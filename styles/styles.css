@@ -1,5 +1,13 @@
+:root {
+    --primary-color: darkblue;
+    --complemental-color: black;
+    --text-alignment: center;
+    --maximum-width: 78rem;
+    --image-height: auto;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
@@ -10,17 +18,17 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 h2 {
-    text-align: center;
+    text-align: var(--text-alignment);
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--complemental-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -30,33 +38,33 @@ p {
 }
 
 main {
-    max-width: 78rem;
+    max-width: var(--maximum-width);
 }
 
 aside {
-    width: 78rem;
+    width: var(--maximum-width);
     margin: 1.5rem 1rem 1rem 1rem;
-    border: 2px dotted darkblue;
+    border: 2px dotted var(--primary-color);
     padding: 1rem 1rem 1rem 2.3rem;
     background-color: lightblue;
-    color: black;
+    color: var(--complemental-color);
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--image-height);
 }
 
 main img {
     width: 150px;
-    height: auto;
-    border: 1px solid darkblue;
+    height: var(--image-height);
+    border: 1px solid var(--primary-color);
     padding: 0;
-    box-shadow: 0 0 5px darkblue;
+    box-shadow: 0 0 5px var(--primary-color);
 }
 
 footer {
     margin-top: 2rem;
-    border-top: 2px solid darkblue;
-    text-align: center;
+    border-top: 2px solid var(--primary-color);
+    text-align: var(--text-alignment);
 }
