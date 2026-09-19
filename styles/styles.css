@@ -37,7 +37,7 @@ h2 {
     text-align: var(--text-alignment);
     position: absolute;
     top: 1.5rem;
-    left: 35.5rem;
+    left: 34rem;
 }
 
 img {
@@ -54,8 +54,7 @@ p {
 }
 
 li {
-    padding: 1rem;
-    margin: 0 0 1rem 0
+    padding: 0.2rem;
 }
 
 main {
