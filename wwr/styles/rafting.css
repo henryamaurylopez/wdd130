@@ -1,9 +1,10 @@
 :root {
-    --primary-color: rgb(255, 30, 0);
+    --primary-color: rgb(224, 27, 1);
     --secondary-color: lightblue;
     --accent-color1: rgb(255, 102, 0);
-    --accent-color2: rgba(0, 119, 255, 0.685);
-    --body-font: Arial, Georgia, Times;
+    --accent-color2: rgb(0, 31, 116);
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -15,4 +16,80 @@
 body {
     font-family: var(--body-font);
     color: var(--accent-color2)
+}
+
+header,
+main,
+footer {
+    width: 83rem;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+article,
+section {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 3rem;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 2.5rem;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    opacity: 0.8;
+    font-size: 3rem;
+}
+
+.hero article {
+    position: absolute;
+    top: 72.8%;
+    background-color: var(--accent-color2);
+    color: white;
+    opacity: 0.9;
+    border: 1px solid black;
+}
+
+.hero article img {
+    width: 12rem;
+    height: auto;
+    float: right;
+    margin: 1rem;
+    border: 3px solid black;
 }
