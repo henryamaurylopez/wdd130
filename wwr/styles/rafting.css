@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+nav a {
+    color: var(--accent-color1)
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent-color2);
@@ -93,4 +97,8 @@ h2 {
     float: right;
     margin: 1rem;
     border: 3px solid black;
+}
+
+footer p {
+    color: var(--accent-color1)
 }
