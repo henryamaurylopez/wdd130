@@ -1,8 +1,13 @@
+/* I still have to organize the colors.
+I will use a palette of different tones of green and red. */
+
 :root {
-    --primary-color: rgb(224, 27, 1);
-    --secondary-color: lightblue;
-    --accent-color1: rgb(255, 102, 0);
-    --accent-color2: rgb(0, 31, 116);
+    --primary-color: #101820;
+    --secondary-color: #E4A91A;
+    --accent-color1: #C83D16;
+    --accent-color2: rgb(104, 173, 64);
+    --text-color: blue;
+    --sections-color: brown;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -13,13 +18,38 @@
     box-sizing: border-box;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header img {
+    padding: 0%;
+    background-color: var(--primary-color);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
 nav a {
     color: var(--accent-color1);
 }
 
+header nav a {
+    padding: 10px 3rem 10px 3rem;
+    margin: 0;
+    background-color: var(--primary-color);
+    border: 2px solid var(--accent-color1);
+}
+
 body {
     font-family: var(--body-font);
-    color: var(--accent-color2);
+    color: var(--primary-color);
     font-size: 1rem;
 }
 
@@ -33,7 +63,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent-color2);
 }
 
 nav,
@@ -44,11 +74,74 @@ section {
     padding: 0.5rem;
 }
 
+.grid1 {
+    display: grid;
+    grid-template: 1fr 3fr / 1fr 18rem 1fr;
+    border: 1px solid var(--accent-color1);
+    background-color: var(--sections-color);
+    color: var(--text-color);
+}
+
+.grid1 h2 {
+    grid-column: span 4;
+    grid-row: 1;
+}
+
+.grid1 img,
+.grid1 p {
+    justify-self: center;
+    align-self: center;
+}
+
+.grid1 img {
+    width: 16rem;
+    order: 1;
+}
+
+#p1 {
+    order: 1;
+}
+
+.grid2 {
+    display: grid;
+    grid-template: 1fr 3fr / 1fr;
+    border: 1px solid var(--accent-color1);
+    background-color: var(--sections-color);
+    color: var(--text-color);
+}
+
+.grid2 ul {
+    justify-self: center;
+    align-self: center;
+}
+
+.grid2 ul li {
+    padding: 0;
+    margin: 10px 2rem 0px 2rem;
+}
+
+figure img {
+    padding-bottom: 5px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+section img {
+    width: 12rem;
+    height: auto;
+}
+
 h2 {
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 1rem;
-    color: var(--secondary-color);
+}
+
+.socialmedia {
+    position: absolute;
+    left: 83%;
 }
 
 .socialmedia a {
@@ -58,6 +151,7 @@ h2 {
 .socialmedia a img {
     width: 3rem;
     height: auto;
+    padding: 5px;
 }
 
 .hero {
@@ -65,6 +159,7 @@ h2 {
 }
 
 .hero img {
+    margin-top: 1rem;
     display: block;
     width: 100%;
     height: auto;
@@ -76,8 +171,8 @@ h2 {
     width: 100%;
     height: 4rem;
     text-align: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--accent-color2);
     opacity: 0.8;
     font-size: 3rem;
 }
@@ -85,10 +180,10 @@ h2 {
 .hero article {
     position: absolute;
     top: 72.8%;
-    background-color: var(--accent-color2);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     opacity: 0.9;
-    border: 1px solid black;
+    border: 1px solid var(--accent-color1);
 }
 
 .hero article img {
@@ -96,7 +191,16 @@ h2 {
     height: auto;
     float: right;
     margin: 1rem;
-    border: 3px solid black;
+    border: 3px solid var(--accent-color1);
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
 }
 
 footer p {
