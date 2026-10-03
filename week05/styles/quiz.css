@@ -1,0 +1,79 @@
+:root {
+    --standard-width: 500px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: var(--standard-width);
+    margin: 0 auto;
+}
+
+h1 {
+    color: navy;
+    margin: 1rem;
+    text-align: left;
+}
+
+.box {
+    padding: 1rem;
+    border-radius: 0.8cap;
+}
+
+form {
+    display: grid;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: #ddd;
+    width: var(--standard-width);
+}
+
+.quiz-item {
+    display: grid;
+    margin: 10px 0 10px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: large;
+}
+
+label[for="q4"] {
+    margin-bottom: 0;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 5px 8px;
+}
+
+code {
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: large;
+    background-color: rgb(70, 70, 70);
+    color: whitesmoke;
+    width: 75%;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: rgb(0, 36, 0);
+}
