@@ -34,16 +34,24 @@ form {
 
 .quiz-item {
     display: grid;
-    margin: 10px 0 10px;
+    margin: 10px 0 1.5rem;
+}
+
+li {
+    margin-bottom: 6px;
+    margin-left: 1.6rem;
+    color: darkblue;
+    font-size: 1.4rem;
+    font-weight: 900;
 }
 
 label {
-    margin-bottom: 6px;
     font-weight: 600;
     font-size: large;
+    color: black;
 }
 
-label[for="q4"] {
+.q4 {
     margin-bottom: 0;
 }
 
