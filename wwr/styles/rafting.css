@@ -335,3 +335,11 @@ iframe {
     padding: 0;
     margin: 10px 5rem 0px 5rem;
 }
+
+.contacts-grid figure img {
+    box-shadow: 0 0 15px var(--accent-color1);
+}
+
+.contacts-grid figcaption {
+    margin-top: 0.5rem;
+}
