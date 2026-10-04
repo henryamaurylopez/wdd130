@@ -295,6 +295,7 @@ textarea {
     display: flex;
     align-items: center;
     font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .checkbox input {
