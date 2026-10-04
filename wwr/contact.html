@@ -24,78 +24,83 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/working-adventurers.jpg" alt="Banner image of clients rafting.">
-            <h1>The Dry Oar</h1>
-            <article>
-                <img src="images/happy-clients.jpg" alt="Clients enjoying their trip.">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam porro alias
-                    quibusdam
-                    quidem, magnam possimus nisi fugiat quis similique deleniti unde ab sed! Quam,
-                    adipisci
-                    aliquid! Obcaecati ex vitae necessitatibus odit? Possimus, cupiditate aliquid
-                    ipsam
-                    repudiandae ex libero eligendi molestiae quis adipisci illo omnis temporibus,
-                    provident
-                    aperiam rerum a debitis. Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Ratione repudiandae fuga maiores et adipisci. Quis omnis veritatis, dolor
-                    deleniti voluptatem dolorum quidem voluptas consectetur corporis at repudiandae.
-                    A quisquam sint dolorum, adipisci maiores, veritatis, labore perspiciatis ad
-                    totam voluptas sunt cum? Nisi nam voluptatibus neque omnis distinctio
-                    reprehenderit magnam veniam?</p>
-            </article>
+        <div id="main-contact-grid">
+            <div class="company-info">
+                <h1>The Dry Oar Company</h1>
+                <p>123 Main River Street</p>
+                <p>Zarahemla, Bountiful Land</p>
+                <p>+1 123 456 7890</p>
+                <p>info@dryoar.com</p>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30106.85245006946!2d-70.51577662858887!3d19.39699437926345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sdo!4v1791079028477!5m2!1sen!2sdo"
+              width="600" height="450" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            <form>
+                <div class="form-item">
+                    <label for="username">Name</label> <input type="text" id="username"
+                      name="username" placeholder="Enter your fullname" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email</label> <input type="text" id="email" name="email"
+                      placeholder="youremail@example.com" required>
+                </div>
+
+                <div class="form-item radio-section">
+                    <label id="main-radio-label">Message Purpose</label>
+                    <input type="radio" id="purpose1" name="purpose1"> <label for="purpose1">General
+                        Inquiry</label>
+                    <input type="radio" id="purpose2" name="purpose2"> <label
+                      for="purpose2">Reservation
+                        Question</label>
+                    <input type="radio" id="purpose3" name="purpose3"> <label for="purpose3">Website
+                        Suggestion</label>
+                </div>
+
+                <div class="form-item message">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type here"
+                      required></textarea>
+                </div>
+
+                <div class="form-item checkbox">
+                    <input type="checkbox" id="subscription" name="subscription"> <label
+                      for="subscription">Please Subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
         </div>
-        <section class="grid1">
-            <img src="images/history-image.jpg" alt="rafting in the middle of a stony river.">
-            <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nisi quas. Dicta iste
-                aliquid, itaque recusandae magnam quibusdam quaerat ipsam. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Reiciendis, quisquam similique. Cumque iusto
-                molestias optio incidunt eveniet sed inventore ullam.</p>
-            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nisi quas.
-                Dicta iste
-                aliquid, itaque recusandae magnam quibusdam quaerat ipsam. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Reiciendis, quisquam similique. Cumque iusto
-                molestias optio incidunt eveniet sed inventore ullam.</p>
-        </section>
-        <section class="grid2">
-            <h2>Adventure Awaits You!</h2>
+
+        <section class="contacts-grid">
+            <h2>We Are Here to Assist You</h2>
             <ul>
                 <li>
                     <figure>
-                        <img src="images/section-image1.jpg" alt="The cliff of the devil">
-                        <figcaption>The cliff of the devil</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="images/section-image2.jpg" alt="A Quiet Place">
-                        <figcaption>A Quiet Place</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
                         <img src="images/section-image3.jpg" alt="The Shrek's Swamp<">
-                        <figcaption>The Shrek's Swamp</figcaption>
+                        <figcaption>Stephen Duran</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="images/section-image4.jpg" alt="White Inferno">
-                        <figcaption>White Inferno</figcaption>
+                        <figcaption>Drake Johnson</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="images/section-image5.jpg" alt="The Original">
-                        <figcaption>The Original</figcaption>
+                        <figcaption>Mario Castañeda</figcaption>
                     </figure>
                 </li>
             </ul>
         </section>
     </main>
     <footer>
-        <p>©2026 | White Rapids | Henry Amaury Lopez Perez</p>
+        <p>©2026 | The Dry Oar Company | Henry Amaury Lopez Perez</p>
         <nav class="socialmedia">
             <a href="" target="_blank"><img src="images/facebook-logo.svg" alt="Facebook Logo"></a>
             <a href="" target="_blank"><img src="images/instagram-logo.svg"
